@@ -331,7 +331,7 @@ class MainWindow(tk.Tk):
         super().__init__()
         self.title("Principal")
 
-        self.conn = sqlite3.connect('C:\\Users\\USUARIO\\Desktop\\MicroProyectoBD\\MicroProyecto.db')
+        self.conn = sqlite3.connect('MicroProyecto.db')
         self.c = self.conn.cursor()
 
         self.button_registro = ttk.Button(self, text="Registrar Jugador", command=self.open_registro)
